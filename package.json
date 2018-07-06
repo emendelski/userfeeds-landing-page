@@ -9,8 +9,14 @@
   "dependencies": {
     "autoprefixer": "^8.6.5",
     "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.5",
     "babel-preset-env": "^1.7.0",
+    "eslint": "^5.0.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
     "node-sass": "^4.9.1",
+    "parcel-bundler": "^1.9.4",
+    "parcel-plugin-eslint": "^1.0.4",
     "postcss-modules": "^1.1.0",
     "posthtml-include": "^1.2.0",
     "posthtml-loader": "^1.0.1"
