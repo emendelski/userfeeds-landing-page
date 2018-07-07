@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "scripts/index.js",
   "license": "MIT",
+  "scripts": {
+    "serve": "parcel index.html",
+    "build": "parcel build index.html"
+  },
   "devDependencies": {
     "bulma": "^0.7.1"
   },
