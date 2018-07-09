@@ -1,6 +1,35 @@
-@import "~bulma";
+// Global variables
+$family-sans-serif: "Gill Sans Regular", sans-serif;
+$text: #16183D;
+$link: #623CEA;
+// Colors
 
+// bulma
+@import '~bulma';
+
+// Fonts
+@font-face {
+  font-family: "Gill Sans Regular";
+  src: url("../fonts/GillSansMTPro-Book.otf");
+}
+
+@font-face {
+  font-family: "Gill Sans Bold";
+  src: url("../fonts/GillSansMTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: "Gill Sans Display MT Pro Extra Bold";
+  src: url("../fonts/GillSansDisplayMTPro-ExBd.otf");
+}
+
+// Global declarations
 svg {
   width: 16px;
   height: 16px;
 }
+
+// Components
+@import "./header";
+@import "./home";
+@import "./footer";
