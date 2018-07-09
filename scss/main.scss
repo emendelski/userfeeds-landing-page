@@ -1,6 +1,47 @@
-@import "~bulma";
+// Global variables
+$family-sans-serif: "Gill Sans Regular", sans-serif;
+$text: #16183D;
+$link: #623CEA;
+// Colors
 
+// bulma
+@import '~bulma';
+
+// Fonts
+@font-face {
+  font-family: "Gill Sans Regular";
+  src: url("../fonts/GillSansMTPro-Book.woff2") format("woff2"),
+  url("../fonts/GillSansMTPro-Book.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+@font-face {
+  font-family: "Gill Sans Bold";
+  src: url("../fonts/GillSansMTPro-Bold.woff2") format("woff2"),
+  url("../fonts/GillSansMTPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+@font-face {
+  font-family: "Gill Sans Display MT Pro Extra Bold";
+  src: url("../fonts/GillSansDisplayMTPro-ExBd.woff2") format("woff2"),
+  url("../fonts/GillSansDisplayMTPro-ExBd.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+// Global declarations
 svg {
   width: 16px;
   height: 16px;
 }
+
+// Components
+@import "./header";
+@import "./footer";
