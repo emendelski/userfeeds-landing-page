@@ -1,0 +1,51 @@
+.section {
+
+  &-title {
+    font-family: "Gill Sans Display MT Pro Extra Bold", sans-serif;
+    font-size: 2.6rem;
+    line-height: 3.1rem;
+    margin-bottom: .5rem;
+  }
+
+  &-text {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &-link {
+    font-family: "Gill Sans Bold", sans-serif;
+    font-size: 1.1rem;
+
+    &::before {
+      content: ">";
+      margin-right: .6rem;
+    }
+
+    &::after {
+      content: "<";
+      margin-left: .6rem;
+    }
+  }
+}
+
+.card {
+  box-shadow: none;
+
+  &-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &-title {
+    font-family: "Gill Sans Display MT Pro Extra Bold", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    margin-bottom: 1rem;
+    width: 50%;
+  }
+
+  &-text {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+}
