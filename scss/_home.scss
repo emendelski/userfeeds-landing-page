@@ -1,0 +1,46 @@
+.home {
+  &-container {
+    text-align: center;
+    width: 60%
+  }
+
+  &-btn {
+    color: #777893;
+    border-radius: 2rem;
+    border: 0;
+    padding: .2rem 2rem;
+    box-shadow: 0 10px 30px 5px rgba(0,0,0,0.05);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+
+    > svg {
+      margin-left: 1rem;
+    }
+  }
+
+  &-title {
+    font-family: "Gill Sans Display MT Pro Extra Bold", sans-serif;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    margin-bottom: .4rem;
+  }
+
+  &-text {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    color: #777893;
+    margin-bottom: .8rem;
+  }
+
+  &-cta-btn {
+    font-family: "Gill Sans Bold", sans-serif;
+    font-size: 1.5rem;
+    padding: .8rem 2rem;
+    height: 3.7rem;
+    color: #ffffff;
+    border-radius: 2rem;
+    border: 0;
+    background: radial-gradient(circle at center top, #9B6FF6, #623CEA);
+    box-shadow: 0 10px 40px 5px rgba(98, 60, 234, 0.2);
+  }
+}
