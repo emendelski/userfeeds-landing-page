@@ -1,7 +1,7 @@
 .section {
 
   &-title {
-    font-family: "Gill Sans Display MT Pro Extra Bold", sans-serif;
+    font-weight: 800;
     font-size: 2.6rem;
     line-height: 3.1rem;
     margin-bottom: .5rem;
@@ -17,12 +17,12 @@
     font-size: 1.1rem;
 
     &::before {
-      content: ">";
+      content: "\203A";
       margin-right: .6rem;
     }
 
     &::after {
-      content: "<";
+      content: "\2039";
       margin-left: .6rem;
     }
   }

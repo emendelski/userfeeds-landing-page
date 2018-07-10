@@ -1,46 +1,58 @@
+$text-color: #777893;
+
 .home {
   &-container {
     text-align: center;
-    width: 60%
+    width: 100%;
+    max-width: 45rem;
   }
 
   &-btn {
-    color: #777893;
+    color: $text-color;
     border-radius: 2rem;
     border: 0;
     padding: .2rem 2rem;
-    box-shadow: 0 10px 30px 5px rgba(0,0,0,0.05);
-    font-size: 1rem;
+    box-shadow: 0 10px 30px 5px rgba(#000, .05);
     margin-bottom: 1.5rem;
 
     > svg {
       margin-left: 1rem;
+
+      > path {
+        fill: $text-color;
+      }
     }
   }
 
   &-title {
-    font-family: "Gill Sans Display MT Pro Extra Bold", sans-serif;
+    font-weight: 800;
     font-size: 4rem;
-    line-height: 4.8rem;
+    line-height: 1.2;
     margin-bottom: .4rem;
   }
 
   &-text {
     font-size: 2rem;
-    line-height: 2.2rem;
-    color: #777893;
+    line-height: 1.1;
+    color: $text-color;
     margin-bottom: .8rem;
   }
 
-  &-cta-btn {
+  &-start {
     font-family: "Gill Sans Bold", sans-serif;
     font-size: 1.5rem;
-    padding: .8rem 2rem;
-    height: 3.7rem;
-    color: #ffffff;
+    padding: 1.2em 2em;
+    color: #fff;
     border-radius: 2rem;
     border: 0;
-    background: radial-gradient(circle at center top, #9B6FF6, #623CEA);
-    box-shadow: 0 10px 40px 5px rgba(98, 60, 234, 0.2);
+    background-image: radial-gradient(50% 200%, #9B6FF6 0%, #623CEA 100%);
+    box-shadow: 0 25px 40px 0 rgba(101, 63, 229, .2), inset 0 1px 4px 0 rgba(#fff, .3);
+    transition: transform ease-in-out .2s;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      transform: translateY(-1px);
+    }
   }
 }
