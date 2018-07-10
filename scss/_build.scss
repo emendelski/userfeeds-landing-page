@@ -1,0 +1,24 @@
+.build {
+  background-color: #F2F4F6;
+
+  .card .media {
+      align-items: center;
+    }
+
+  &-card {
+    background-color: #F2F4F6;
+    width: 50%;
+    float: left;
+
+    &-title {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #16183D;
+    }
+
+    &-text {
+      font-size: 1.1rem;
+      color: #16183D;
+    }
+  }
+}
