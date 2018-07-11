@@ -1,5 +1,11 @@
 .build {
   background-color: #F2F4F6;
+  margin-right: -15rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
 
   .card .media {
       align-items: center;
