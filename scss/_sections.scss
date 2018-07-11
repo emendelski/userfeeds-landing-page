@@ -13,7 +13,7 @@
   }
 
   &-link {
-    font-family: "Gill Sans Bold", sans-serif;
+    font-weight: bold;
     font-size: 1.1rem;
 
     &::before {
@@ -37,7 +37,7 @@
   }
 
   &-title {
-    font-family: "Gill Sans Display MT Pro Extra Bold", sans-serif;
+    font-weight: 800;
     font-size: 1.6rem;
     line-height: 1.9rem;
     margin-bottom: 1rem;
