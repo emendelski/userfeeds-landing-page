@@ -4,7 +4,7 @@
   padding-bottom: 3.5rem;
 
   &-text {
-    font-weight: 800;
+    font-weight: $weight-extra;
     font-size: 2.5rem;
     line-height: 1.2;
 
@@ -16,7 +16,7 @@
   }
 
   &-link {
-    font-weight: bold;
+    font-weight: $weight-bold;
     color: #fff;
     margin-right: 2rem;
     font-size: 1.125rem;

@@ -1,7 +1,7 @@
 .section {
 
   &-title {
-    font-weight: 800;
+    font-weight: $weight-extra;
     font-size: 2.6rem;
     line-height: 1.2;
     margin-bottom: .5rem;
@@ -13,7 +13,7 @@
   }
 
   &-link {
-    font-weight: bold;
+    font-weight: $weight-bold;
     font-size: 1.125rem;
 
     &::before {
@@ -37,7 +37,7 @@
   }
 
   &-title {
-    font-weight: 800;
+    font-weight: $weight-extra;
     font-size: 1.6rem;
     line-height: 1.2;
     margin-bottom: 1rem;

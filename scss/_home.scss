@@ -25,7 +25,7 @@ $text-color: #777893;
   }
 
   &-title {
-    font-weight: 800;
+    font-weight: $weight-extra;
     font-size: 4rem;
     line-height: 1.2;
     margin-bottom: .4rem;
@@ -40,7 +40,7 @@ $text-color: #777893;
 
   &-start {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: $weight-bold;
     padding: .6em 2em;
     color: #fff;
     border-radius: 2rem;

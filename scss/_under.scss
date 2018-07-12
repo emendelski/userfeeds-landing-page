@@ -12,13 +12,13 @@
 
   &-header {
     color: #7075C8;
-    font-weight: bold;
+    font-weight: $weight-bold;
     text-align: right;
   }
 
   &-button {
     background-color: #282C78;
-    font-weight: bold;
+    font-weight: $weight-bold;
     font-size: 1rem;
     padding: 1.5em 2em;
     border-radius: .5em;
