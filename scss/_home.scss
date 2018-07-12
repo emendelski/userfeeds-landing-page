@@ -5,6 +5,7 @@ $text-color: #777893;
     text-align: center;
     width: 100%;
     max-width: 45rem;
+    margin-bottom: 6.5rem;
   }
 
   &-btn {
@@ -13,7 +14,8 @@ $text-color: #777893;
     border: 0;
     padding: .2rem 2rem;
     box-shadow: 0 10px 30px 5px rgba(#000, .05);
-    margin-bottom: 1.5rem;
+    margin-top: 0.2rem;
+    margin-bottom: .8rem;
 
     > svg {
       margin-left: 1rem;
@@ -28,20 +30,21 @@ $text-color: #777893;
     font-weight: $weight-extra;
     font-size: 4rem;
     line-height: 1.2;
-    margin-bottom: .4rem;
+    margin-bottom: 1.2rem;
   }
 
   &-text {
     font-size: 2rem;
     line-height: 1.1;
     color: $text-color;
-    margin-bottom: .8rem;
+    margin-bottom: 1rem;
   }
 
   &-start {
     font-size: 1.5rem;
     font-weight: $weight-bold;
-    padding: .6em 2em;
+    height: 100%;
+    padding: .5em 2em;
     color: #fff;
     border-radius: 2rem;
     border: 0;
