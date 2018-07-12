@@ -19,6 +19,10 @@ svg {
 $text-bold: 700;
 $text-extra-bold: 800;
 
+// Z-index
+$z-index-build: 1;
+$z-index-under: 0;
+
 // Components
 @import "./header";
 @import "./home";

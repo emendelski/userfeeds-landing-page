@@ -1,6 +1,6 @@
 .build {
   position: relative;
-  margin-bottom: 12.5rem;
+  z-index: $z-index-build;
 
   $_z-index-bg: 0;
   $_z-index-container: 1;
