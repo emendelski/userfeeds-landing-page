@@ -19,6 +19,13 @@
     }
   }
 
+  &-nav {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   &-link {
     font-weight: $weight-bold;
     color: #fff;
