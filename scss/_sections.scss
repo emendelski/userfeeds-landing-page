@@ -8,13 +8,13 @@
   }
 
   &-text {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     margin-bottom: 1.5rem;
   }
 
   &-link {
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
 
     &::before {
       content: "\203A";
@@ -45,7 +45,7 @@
   }
 
   &-text {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     line-height: 1.4;
   }
 }
