@@ -2,9 +2,9 @@
   background-color: #2F3490;
   color: #fff;
   position: relative;
-  z-index: 1;
-  padding-top: 30rem;
-  margin-top: 15rem;
+  z-index: $z-index-under;
+  padding-top: 32.5rem;
+  margin-top: -20rem;
 
   .container {
     border-bottom: 1px solid #24276B;
