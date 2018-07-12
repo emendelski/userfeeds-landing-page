@@ -1,0 +1,9 @@
+.navbar {
+  margin-top: 1rem;
+
+  &-item {
+    font-size: 1.125rem;
+    font-weight: $weight-bold;
+    color: #121336;
+  }
+}
