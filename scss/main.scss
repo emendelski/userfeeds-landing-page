@@ -15,6 +15,10 @@ svg {
   height: 16px;
 }
 
+// Font weight
+$text-bold: 700;
+$text-extra-bold: 800;
+
 // Components
 @import "./header";
 @import "./home";
