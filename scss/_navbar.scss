@@ -5,5 +5,9 @@
     font-size: 1.125rem;
     font-weight: $weight-bold;
     color: #121336;
+
+    @include mobile {
+      font-size: .75rem;
+    }
   }
 }

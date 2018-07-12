@@ -6,6 +6,10 @@ $text-color: #777893;
     width: 100%;
     max-width: 45rem;
     margin-bottom: 6.5rem;
+
+    @include mobile {
+      margin-bottom: 1.4rem;
+    }
   }
 
   &-btn {
@@ -24,6 +28,10 @@ $text-color: #777893;
         fill: $text-color;
       }
     }
+
+    @include mobile {
+      font-size: .75rem;
+    }
   }
 
   &-title {
@@ -31,6 +39,11 @@ $text-color: #777893;
     font-size: 4rem;
     line-height: 1.2;
     margin-bottom: 1.2rem;
+
+    @include mobile {
+      font-size: 3rem;
+      margin-bottom: .4rem;
+    }
   }
 
   &-text {
@@ -38,6 +51,12 @@ $text-color: #777893;
     line-height: 1.1;
     color: $text-color;
     margin-bottom: 1rem;
+
+    @include mobile {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      line-height: 1.3rem;
+    }
   }
 
   &-start {
@@ -56,6 +75,10 @@ $text-color: #777893;
     &:focus {
       color: #fff;
       transform: translateY(-1px);
+    }
+
+    @include mobile {
+      font-size: 1rem;
     }
   }
 }

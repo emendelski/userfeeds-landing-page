@@ -2,15 +2,23 @@
 
   &-title {
     font-weight: $weight-extra;
-    font-size: 2.6rem;
+    font-size: 2.625rem;
     line-height: 1.2;
     margin-bottom: .5rem;
+
+    @include mobile {
+      font-size: 2rem;
+    }
   }
 
   &-text {
     font-size: 1.125rem;
     margin-bottom: 1.5rem;
     margin-right: 2rem;
+
+    @include mobile {
+      font-size: 1rem;
+    }
   }
 
   &-link {
