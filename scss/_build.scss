@@ -1,30 +1,72 @@
 .build {
-  background-color: #F2F4F6;
-  margin-right: -15rem;
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: 2;
+  position: relative;
+  margin-bottom: 12.5rem;
 
+  $_z-index-bg: 0;
+  $_z-index-container: 1;
+  $_build-bg-color: #F2F4F6;
 
-  .card .media {
-      align-items: center;
-    }
-
-  &-card {
-    background-color: #F2F4F6;
+  &::after {
+    content: ' ';
+    display: block;
+    height: 100%;
     width: 50%;
-    float: left;
+    background-color: $_build-bg-color;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: $_z-index-bg;
+  }
 
-    &-title {
-      font-weight: bold;
-      font-size: 1.1rem;
-      color: #16183D;
+  > .container {
+    padding: 5rem 2rem;
+    background-color: $_build-bg-color;
+    position: relative;
+    z-index: $_z-index-container;
+
+    @include tablet-only {
+      padding: 5rem;
     }
 
-    &-text {
-      font-size: 1.1rem;
-      color: #16183D;
+    @include desktop-only {
+      padding: 7rem;
+    }
+
+    @include widescreen-only {
+      padding: 7rem 16.66667%;
     }
   }
+
+  .column {
+    margin-top: 2.5rem;
+  }
+
+  .media {
+    align-items: center;
+    padding-left: 2rem;
+  }
+
+  .media-left {
+    margin-right: 2rem;
+  }
+}
+
+.build-header {
+  margin-bottom: 2.5rem;
+}
+
+.build-subtitle, .build-subtext {
+  font-size: 1.125rem;
+  line-height: 1.2;
+  color: #16183D;
+}
+
+.build-subtitle {
+  font-weight: 700;
+  margin-bottom: .25em;
+}
+
+.build-subtext {
+  margin-bottom: 0;
 }
