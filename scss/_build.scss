@@ -1,0 +1,30 @@
+.build {
+  background-color: #F2F4F6;
+  margin-right: -15rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+
+  .card .media {
+      align-items: center;
+    }
+
+  &-card {
+    background-color: #F2F4F6;
+    width: 50%;
+    float: left;
+
+    &-title {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #16183D;
+    }
+
+    &-text {
+      font-size: 1.1rem;
+      color: #16183D;
+    }
+  }
+}

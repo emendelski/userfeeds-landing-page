@@ -1,0 +1,28 @@
+.footer {
+  background-color: #2F3490;
+  color: #fff;
+  padding-bottom: 3.5rem;
+
+  &-text {
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 1.2;
+
+    &-link {
+      display: block;
+      color: #F6A2B1;
+      margin-bottom: 5.5rem;
+    }
+  }
+
+  &-link {
+    font-weight: bold;
+    color: #fff;
+    margin-right: 2rem;
+    font-size: 1.1rem;
+
+    &-social {
+      margin-right: 0.5rem;
+    }
+  }
+}

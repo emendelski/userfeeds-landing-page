@@ -1,6 +1,24 @@
-@import "~bulma";
+// Fonts
+@import "./fonts";
 
+// Global variables
+$family-sans-serif: "Gill Sans", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$text: #16183D;
+$link: #623CEA;
+
+// bulma
+@import '~bulma';
+
+// Global declarations
 svg {
   width: 16px;
   height: 16px;
 }
+
+// Components
+@import "./header";
+@import "./home";
+@import "./sections";
+@import "./build";
+@import "./under";
+@import "./footer";

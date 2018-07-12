@@ -1,0 +1,38 @@
+.under {
+  background-color: #2F3490;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  padding-top: 30rem;
+  margin-top: 15rem;
+
+  .container {
+    border-bottom: 1px solid #24276B;
+  }
+
+  &-header {
+    color: #7075C8;
+    font-weight: bold;
+    text-align: right;
+  }
+
+  &-button {
+    background-color: #282C78;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 1.5em 2em;
+    border-radius: .5em;
+    margin: 1em;
+
+    &.is-active {
+      border: solid 1px #18ACFA;
+      color: #fff;
+      box-shadow: 0 20px 40px 0 rgba(27, 29, 74, .6);
+    }
+
+    &.is-inactive {
+      border: 0;
+      color: #7075C8;
+    }
+  }
+}
