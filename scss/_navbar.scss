@@ -1,7 +1,7 @@
-.navbar {
+.nav {
   margin-top: 1.7rem;
 
-  &-item {
+  &-link {
     font-size: 1.125rem;
     font-weight: $weight-bold;
     color: #121336;
@@ -10,35 +10,19 @@
       font-size: .75rem;
     }
   }
-}
-
-// Force showing navbar on mobile
-
-@include touch {
-  .navbar-item {
-    display: flex;
+  .social {
+    margin-left: 1.75rem;
+    > .nav-link {
+      margin-left: 1.3rem;
+    }
   }
 
-  .navbar,
-  .navbar-menu,
-  .navbar-start,
-  .navbar-end {
-    align-items: stretch;
-    display: flex;
-    padding: 0;
-  }
+  .telegram,
+  .social {
+    display: inline-block;
 
-  .navbar-menu{
-    flex-grow: 1;
-    flex-shrink: 0;
-    box-shadow: none;
-  }
-  .navbar-start{
-    justify-content: flex-start;
-    margin-right: auto;
-  }
-  .navbar-end{
-    justify-content: flex-end;
-    margin-left: auto;
+    @include mobile {
+      display: block;
+    }
   }
 }
