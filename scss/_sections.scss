@@ -66,3 +66,33 @@
     margin-bottom: 6.125rem;
   }
 }
+
+.engage {
+  background-color: #AAE0F8;
+
+  .card-title {
+    margin-top: 12rem;
+  }
+
+  @include mobile {
+    display: flex;
+  }
+
+  &-text {
+    @include mobile {
+      background-color: #fff;
+      order: 2;
+    }
+  }
+
+  &-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile {
+      order: 1;
+    }
+  }
+}
