@@ -70,18 +70,20 @@
 .engage {
   background-color: #AAE0F8;
 
-  .card-title {
-    margin-top: 12rem;
-  }
-
-  @include mobile {
-    display: flex;
+  .columns {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &-text {
+    padding-top: 12rem;
+
     @include mobile {
       background-color: #fff;
       order: 2;
+      padding-top: 2.5rem;
     }
   }
 
@@ -90,6 +92,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-basis: auto;
 
     @include mobile {
       order: 1;
