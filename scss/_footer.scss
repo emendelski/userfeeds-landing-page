@@ -25,8 +25,17 @@
     margin-right: 2rem;
     font-size: 1.125rem;
 
+    @include mobile {
+      display: block;
+      margin-bottom: .875rem;
+    }
+
     &-social {
       margin-right: 0.5rem;
+
+      @include mobile {
+        display: inline-block;
+      }
     }
   }
 }
