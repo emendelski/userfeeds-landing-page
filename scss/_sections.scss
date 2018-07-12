@@ -70,8 +70,13 @@
 .engage {
   background-color: #AAE0F8;
   background-image: url("../images/clouds.svg");
-  background-position: bottom center;
+  background-position: bottom left;
   background-repeat: no-repeat;
+  background-size: auto 36px;
+
+  @include mobile {
+    background-image: none;
+  }
 
   .columns {
     @include mobile {
@@ -99,6 +104,10 @@
 
     @include mobile {
       order: 1;
+      background-image: url("../images/clouds.svg");
+      background-position: bottom left;
+      background-repeat: no-repeat;
+      background-size: auto 36px;
     }
   }
 }
