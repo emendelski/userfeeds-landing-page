@@ -15,6 +15,9 @@ svg {
   height: 16px;
 }
 
+$z-index-build: 1;
+$z-index-under: 0;
+
 // Components
 @import "./header";
 @import "./home";
