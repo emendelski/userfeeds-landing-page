@@ -29,13 +29,31 @@
       display: block;
       margin-bottom: .875rem;
     }
+  }
 
-    &-social {
+  @include mobile {
+
+    .column {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &-social {
+    white-space: nowrap;
+
+    &-link {
       margin-right: 0.5rem;
+    }
 
-      @include mobile {
-        display: inline-block;
-      }
+    @media (max-width: 1500px) {
+      position: relative;
+      bottom: 4.5rem;
+      width: 100% !important;
+      text-align: right;
+    }
+    @include mobile {
+      bottom: 10rem;
     }
   }
 }
