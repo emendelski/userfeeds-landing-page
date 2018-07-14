@@ -1,29 +1,31 @@
 .nav {
   margin-top: 1.7rem;
 
+  @include touch {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
   &-link {
     font-size: 1.125rem;
     font-weight: $weight-bold;
     color: #121336;
 
-    @include mobile {
+    @media (max-width: 500px) {
       font-size: .75rem;
     }
   }
-  .social {
-    margin-left: 1.75rem;
+
+  &-social {
+
     > .nav-link {
       margin-left: 1.3rem;
     }
-  }
 
-  .telegram,
-  .social {
-    display: inline-block;
-
-    @include mobile {
-      display: block;
-      margin-bottom: .7rem;
+    @media (max-width: 500px) {
+      width: 100%;
+      margin-left: 0;
+      padding-top: 0;
     }
   }
 }
