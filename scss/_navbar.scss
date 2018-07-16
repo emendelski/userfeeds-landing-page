@@ -1,8 +1,7 @@
 .nav {
-  margin-top: 2.7rem;
+  margin-top: 2.5rem;
 
   @include touch {
-    margin-top: 2.9rem;
     margin-left: 1.25rem;
     margin-right: 1.25rem;
   }
@@ -12,21 +11,34 @@
     font-weight: $weight-bold;
     color: #121336;
 
-    @media (max-width: 500px) {
-      font-size: .75rem;
+    @media (max-width: $mobile) {
+      font-size: .85rem;
+    }
+  }
+
+  &-middle > .nav-link {
+
+    + .nav-link {
+      margin-left: 1rem;
+    }
+
+    @include mobile {
+      font-size: .85rem;
+      color: #777893;
     }
   }
 
   &-social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 
-    > .nav-link {
-      margin-left: 1.3rem;
+    > .nav-link + .nav-link {
+      margin-left: 1.25rem;
     }
 
-    @media (max-width: 500px) {
-      width: 100%;
-      margin-left: 0;
-      padding-top: 0;
+    .nav-link > svg {
+      display: block;
     }
   }
 }
