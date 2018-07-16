@@ -19,41 +19,22 @@
     }
   }
 
-  &-link {
-    font-weight: $weight-bold;
-    color: #fff;
-    margin-right: 2rem;
-    font-size: 1.125rem;
+  .nav-middle {
 
     @include mobile {
-      display: block;
-      margin-bottom: .875rem;
-    }
-  }
+      order: 2;
+      width: 100%;
 
-  @include mobile {
+      > .nav-link {
+        display: block;
+        color: #fff;
+        margin-left: 0;
+        font-size: 1rem;
 
-    .column {
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-  }
-
-  &-social {
-    white-space: nowrap;
-
-    &-link {
-      margin-right: 0.5rem;
-    }
-
-    @media (max-width: 1500px) {
-      position: relative;
-      bottom: 4.5rem;
-      width: 100% !important;
-      text-align: right;
-    }
-    @include mobile {
-      bottom: 10rem;
+        + .nav-link {
+          margin-top: .5rem;
+        }
+      }
     }
   }
 }
