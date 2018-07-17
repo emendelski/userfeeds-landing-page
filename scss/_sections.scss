@@ -259,7 +259,6 @@
 }
 
 .interact {
-  position: relative;
 
   &-freeform {
     position: absolute;
@@ -281,13 +280,13 @@
 
     @include mobile {
       top: -10rem;
-      left: 40%;
+      left: auto;
+      right: 2rem;
     }
   }
 }
 
 .monetize {
-  position: relative;
 
   &-freeform {
     position: absolute;
@@ -316,7 +315,6 @@
 }
 
 .protect {
-  position: relative;
 
   &-freeform {
     position: absolute;
