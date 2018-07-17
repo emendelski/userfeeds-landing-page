@@ -33,7 +33,7 @@
       padding: 7rem;
     }
 
-    @include widescreen-only {
+    @include widescreen {
       padding: 7rem 16.66667%;
     }
   }
