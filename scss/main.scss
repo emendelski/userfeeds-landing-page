@@ -12,9 +12,14 @@ $link: #623CEA;
 $mobile: 480px;
 
 // Global declarations
-svg {
+#svg-github, #svg-twitter, #svg-medium {
   width: 16px;
   height: 16px;
+  display: block;
+
+  path {
+    fill: inherit;
+  }
 }
 
 // Font weight
