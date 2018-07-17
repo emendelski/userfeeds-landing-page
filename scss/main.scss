@@ -6,13 +6,23 @@ $family-sans-serif: "Gill Sans", BlinkMacSystemFont, -apple-system, "Segoe UI", 
 $text: #16183D;
 $link: #623CEA;
 
+$speed: .25s;
+
 // bulma
 @import '~bulma';
 
+$mobile: 480px;
+
 // Global declarations
-svg {
+.svg, #svg-github, #svg-twitter, #svg-medium {
   width: 16px;
   height: 16px;
+  display: block;
+
+  path {
+    fill: inherit;
+    transition: all $speed;
+  }
 }
 
 // Font weight

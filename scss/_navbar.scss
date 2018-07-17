@@ -1,44 +1,33 @@
-.navbar {
-  margin-top: 1.7rem;
+.nav {
 
-  &-item {
+  &-link {
     font-size: 1.125rem;
     font-weight: $weight-bold;
     color: #121336;
 
-    @include mobile {
-      font-size: .75rem;
+    @media (max-width: $mobile) {
+      font-size: .85rem;
     }
   }
-}
 
-// Force showing navbar on mobile
+  &-middle > .nav-link {
 
-@include touch {
-  .navbar-item {
+    + .nav-link {
+      margin-left: 1rem;
+    }
+
+    @include mobile {
+      color: #777893;
+    }
+  }
+
+  &-social {
     display: flex;
-  }
-
-  .navbar,
-  .navbar-menu,
-  .navbar-start,
-  .navbar-end {
-    align-items: stretch;
-    display: flex;
-    padding: 0;
-  }
-
-  .navbar-menu{
-    flex-grow: 1;
-    flex-shrink: 0;
-    box-shadow: none;
-  }
-  .navbar-start{
-    justify-content: flex-start;
-    margin-right: auto;
-  }
-  .navbar-end{
+    align-items: center;
     justify-content: flex-end;
-    margin-left: auto;
+
+    > .nav-link + .nav-link {
+      margin-left: 1.25rem;
+    }
   }
 }

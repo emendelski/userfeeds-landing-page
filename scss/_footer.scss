@@ -1,7 +1,7 @@
 .footer {
+  color: $white;
   background-color: #2F3490;
-  color: #fff;
-  padding-bottom: 3.5rem;
+  padding: 0;
 
   &-text {
     font-weight: $weight-extra;
@@ -19,21 +19,33 @@
     }
   }
 
-  &-nav {
-    @include mobile {
-      display: flex;
-      flex-direction: column;
+  .nav {
+    fill: $white;
+
+    @media (max-width: $mobile) {
+      padding-top: 0;
     }
   }
 
-  &-link {
-    font-weight: $weight-bold;
-    color: #fff;
-    margin-right: 2rem;
-    font-size: 1.125rem;
+  .nav-link {
+    color: $white;
+  }
 
-    &-social {
-      margin-right: 0.5rem;
+  .nav-middle {
+
+    @include mobile {
+      order: 2;
+      width: 100%;
+
+      > .nav-link {
+        display: block;
+        color: $white;
+        margin-left: 0;
+
+        + .nav-link {
+          margin-top: .5rem;
+        }
+      }
     }
   }
 }
