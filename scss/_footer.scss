@@ -20,6 +20,8 @@
   }
 
   .nav {
+    fill: $white;
+
     @media (max-width: $mobile) {
       padding-top: 0;
     }
