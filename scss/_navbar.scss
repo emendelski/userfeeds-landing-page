@@ -5,6 +5,12 @@
     font-weight: $weight-bold;
     color: #121336;
 
+    &:hover,
+    &:focus {
+      color: #121336;
+      fill: $text-color;
+    }
+
     @media (max-width: $mobile) {
       font-size: .85rem;
     }
@@ -17,7 +23,7 @@
     }
 
     @include mobile {
-      color: #777893;
+      color: $text-color;
     }
   }
 
