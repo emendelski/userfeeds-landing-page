@@ -1,10 +1,4 @@
 .nav {
-  margin-top: 2.5rem;
-
-  @include touch {
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-  }
 
   &-link {
     font-size: 1.125rem;
@@ -23,7 +17,7 @@
     }
 
     @include mobile {
-      font-size: .85rem;
+      // font-size: .85rem;
       color: #777893;
     }
   }
