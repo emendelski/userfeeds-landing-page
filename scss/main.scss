@@ -34,6 +34,9 @@ $weight-extra: 800;
 $z-index-build: 1;
 $z-index-under: 0;
 
+// Utilities
+@import "./utilities";
+
 // Components
 @import "./navbar";
 @import "./home";

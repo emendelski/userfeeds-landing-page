@@ -1,0 +1,52 @@
+// SIZING MIXIN
+// generates .mt-0 classes which helps to set paddings/margins
+$spacers-list:      0 .25rem .5rem 1rem 1.5rem 3rem 5rem;
+$sizing-list:       margin padding;
+$directions-list:   t r b l x y;
+
+@each $sizing in $sizing-list {
+  $infix: str-slice($sizing, 0, 1);
+
+  @each $spacer in $spacers-list {
+    $s: index($spacers-list, $spacer) - 1;
+
+    @each $d in $directions-list {
+
+      .#{$infix}#{$d}-#{$s} {
+        @if $d == 't' or $d == 'x' {
+          #{$sizing}-top: $spacer !important;
+        }
+
+        @if $d == 'b' or $d == 'x' {
+          #{$sizing}-bottom: $spacer !important;
+        }
+
+        @if $d == 'l' or $d == 'y' {
+          #{$sizing}-left: $spacer !important;
+        }
+
+        @if $d == 'r' or $d == 'y' {
+          #{$sizing}-right: $spacer !important;
+        }
+      }
+    }
+  }
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
