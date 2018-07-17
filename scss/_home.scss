@@ -3,7 +3,7 @@ $text-color: #777893;
 .header {
   .nav {
     padding-top: 2rem;
-    fill: #777893;
+    fill: $text-color;
   }
 
   .nav-social {
@@ -16,84 +16,102 @@ $text-color: #777893;
 }
 
 .home {
+  position: relative;
+
+  &::after {
+    content: ' ';
+    display: block;
+    width: 45rem;
+    height: 45rem;
+    position: absolute;
+    right: -1/2 * 45rem;
+    top: 0;
+    z-index: -1;
+    background-color: #FEFBE1;
+    border-radius: 50%;
+  }
+
+  .hero-body {
+    min-height: calc(100vh - 6.6875rem); // 6.6875rem is exact nav height
+  }
+
   &-container {
     text-align: center;
     width: 100%;
     max-width: 45rem;
-    margin-bottom: 6.5rem;
 
     @include mobile {
-      margin-bottom: 1.4rem;
+      margin-bottom: 1.5rem;
     }
   }
 
   &-btn {
     color: $text-color;
-    border-radius: 2rem;
+    border-radius: $radius-rounded;
     border: 0;
-    padding: .2rem 2rem;
-    box-shadow: 0 10px 30px 5px rgba(#000, .05);
-    margin-top: 0.2rem;
-    margin-bottom: .8rem;
+    padding: .375em 1.5em;
+    box-shadow: 0 10px 20px 0 rgba($text-color, 0.1);
+    margin-bottom: 1rem;
+    fill: $text-color;
+    transition: all $speed $easing;
+    height: auto;
 
     > svg {
       margin-left: 1rem;
-
-      > path {
-        fill: $text-color;
-      }
     }
 
-    @include mobile {
-      font-size: .75rem;
+    &:hover,
+    &:focus {
+      color: #222;
+      fill: #222;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 25px 0 rgba($text-color, 0.15) !important;
     }
   }
 
   &-title {
     font-weight: $weight-extra;
     font-size: 4rem;
-    line-height: 1.2;
-    margin-bottom: 1.2rem;
+    line-height: 1;
+    margin-bottom: .3em;
 
     @include mobile {
       font-size: 3rem;
-      margin-bottom: .4rem;
     }
   }
 
   &-text {
     font-size: 2rem;
-    line-height: 1.1;
+    line-height: 1.2;
     color: $text-color;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
     @include mobile {
       font-size: 1rem;
-      margin-bottom: 2rem;
-      line-height: 1.3rem;
     }
   }
 
   &-start {
     font-size: 1.5rem;
     font-weight: $weight-bold;
-    height: 100%;
+    height: auto;
     padding: .5em 2em;
-    color: #fff;
-    border-radius: 2rem;
+    color: $white;
     border: 0;
+    border-radius: $radius-rounded;
     background-image: radial-gradient(50% 200%, #9B6FF6 0%, #623CEA 100%);
-    box-shadow: 0 25px 40px 0 rgba(101, 63, 229, .2), inset 0 1px 4px 0 rgba(#fff, .3);
-    transition: transform ease-in-out .2s;
+    box-shadow: 0 25px 40px 0 rgba(#653FE5, .2), inset 0 1px 4px 0 rgba($white, .3);
+    transition: all $speed;
 
     &:hover,
     &:focus {
-      color: #fff;
+      color: $white;
       transform: translateY(-1px);
+      box-shadow: 0 25px 50px 0 rgba(#653FE5, .25), inset 0 1px 4px 0 rgba($white, .3) !important;
     }
 
     @include mobile {
-      font-size: 1rem;
+      font-size: 1.25rem;
     }
   }
 }
