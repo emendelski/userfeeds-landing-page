@@ -268,12 +268,21 @@
     left: 10%;
     top: 4rem;
     z-index: -1;
+
+    @include mobile {
+      top: -16rem;
+    }
   }
 
   &-image {
     position: absolute;
     top: 5rem;
     left: 20%;
+
+    @include mobile {
+      top: -10rem;
+      left: 40%;
+    }
   }
 }
 
@@ -284,15 +293,25 @@
     position: absolute;
     width: 65rem;
     height: auto;
-    right: 60%;
     top: -5rem;
+    right: 60%;
     z-index: -1;
+
+    @include mobile {
+      top: -18rem;
+      right: 10%;
+    }
   }
 
   &-image {
     position: absolute;
     top: -2rem;
     left: 0;
+
+    @include mobile {
+      top: -14rem;
+      left: 5%;
+    }
   }
 }
 
@@ -306,11 +325,20 @@
     left: 30%;
     top: -5rem;
     z-index: -1;
+
+    @include mobile {
+      top: -16rem;
+      left: -15%;
+    }
   }
 
   &-image {
     position: absolute;
     top: 2rem;
     left: 45%;
+
+    @include mobile {
+      top: -10rem;
+    }
   }
 }
