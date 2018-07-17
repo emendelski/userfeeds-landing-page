@@ -257,3 +257,60 @@
     }
   }
 }
+
+.interact {
+  position: relative;
+
+  &-freeform {
+    position: absolute;
+    width: 73rem;
+    height: auto;
+    left: 10%;
+    top: 4rem;
+    z-index: -1;
+  }
+
+  &-image {
+    position: absolute;
+    top: 5rem;
+    left: 20%;
+  }
+}
+
+.monetize {
+  position: relative;
+
+  &-freeform {
+    position: absolute;
+    width: 65rem;
+    height: auto;
+    right: 60%;
+    top: -5rem;
+    z-index: -1;
+  }
+
+  &-image {
+    position: absolute;
+    top: 5rem;
+    left: 20%;
+  }
+}
+
+.protect {
+  position: relative;
+
+  &-freeform {
+    position: absolute;
+    width: 47rem;
+    height: auto;
+    left: 30%;
+    top: -5rem;
+    z-index: -1;
+  }
+
+  &-image {
+    position: absolute;
+    top: 2rem;
+    left: 45%;
+  }
+}
