@@ -8,7 +8,6 @@
     &:hover,
     &:focus {
       color: #121336;
-      fill: $text-color;
     }
 
     @media (max-width: $mobile) {
@@ -36,4 +35,8 @@
       margin-left: 1.25rem;
     }
   }
+}
+
+.header .nav-link svg {
+  fill: $text-color;
 }
