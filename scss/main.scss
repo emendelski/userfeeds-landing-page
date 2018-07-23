@@ -20,11 +20,11 @@ $text-color: #777893;
   width: 16px;
   height: 16px;
   display: block;
+}
 
-  path {
-    fill: inherit;
-    transition: all $speed;
-  }
+svg path {
+  fill: inherit;
+  transition: all $speed;
 }
 
 // Font weight
