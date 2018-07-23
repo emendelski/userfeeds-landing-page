@@ -4,9 +4,12 @@
   padding: 0;
 
   &-text {
-    font-weight: $weight-extra;
-    font-size: 2.5rem;
     line-height: 1.2;
+    font-size: 2.5rem;
+    font-weight: $weight-extra;
+    border-top: 1px solid #24276B;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
 
     @include mobile {
       font-size: 2rem;
@@ -15,12 +18,15 @@
     &-link {
       display: block;
       color: #F6A2B1;
-      margin-bottom: 5.5rem;
+
+      &:hover,
+      &:focus {
+        color: darken(#F6A2B1, 5%);
+      }
     }
   }
 
   .nav {
-    fill: $white;
 
     @media (max-width: $mobile) {
       padding-top: 0;
@@ -48,4 +54,8 @@
       }
     }
   }
+}
+
+.footer .nav-link svg {
+  fill: $white;
 }
